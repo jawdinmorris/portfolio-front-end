@@ -1,36 +1,66 @@
 body {
   position: relative;
   color: white;
-  background-color: gray;
+  background-color: #f3f3f3;
   margin: 0;
   padding: 0;
   height: auto;
 }
 
+nav {
+  position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+/* max-height: 5vh; */
+width: 80%;
+padding:0 10%;
+/* background-color: #f3f3f3; */
 
+}
+
+.solid {
+  color: black;
+  background-color: #f3f3f3;
+  /* border: 1px solid #e7e7e7; */
+  z-index: 1;
+}
+.navComponent {
+  /* text-shadow: .2px .2px #f3f3f3; */
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    opacity: 1;
+
 }
 
 li {
     float: right;
+    min-height: 5vh;
 }
 
 li a {
     display: block;
-    color: #666;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color:#e7e7e7;
 }
 
 li a:hover:not(.active) {
-    background-color: #ddd;
+  /* border-color: black;
+  border: 10px;
+  border-radius: 20%; */
+  opacity: 0.5;
+  /* top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; */
 }
 
 /* li a.active {
@@ -43,25 +73,45 @@ li a:hover:not(.active) {
 }
 
 #headContent{
-  position:relative;
-  top: 30%;
-  right: 20%;
+  /* max-height: 30vh;
+  min-height: 17vh; */
+  padding: 20% 15%;
+  text-align: right;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  height: auto;
+  margin-bottom: 150px;
 }
 
+#headContent h1{
+  margin: 0;
+  padding: 0;
+}
+#headContent h2{
+  margin: 0;
+  padding: 10px 0;
+}
 #headMain {
-  height: 100vh;
+  display:block;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  background-image: url("resources/tempHeader.jpg");
+  background-color: #767676;
+  /* background-image: url("resources/tempHeader.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   text-align: right;
+  min-height: 80vh;
 }
 
 #mainContainer {
-  margin: 0 auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
   height: auto;
-  margin-top: -20vh;
+  top: -40vh;
   border-radius: 20px 20px 0px 0px;
   background-color: white;
   color: black;

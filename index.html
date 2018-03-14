@@ -2,37 +2,52 @@
 <html>
 
 <head>
+  <!-- Meta Data -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- External StyleSheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- My StyleSheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Title that appears in tab -->
   <title>Jordan Morris - Inclusive Development</title>
 </head>
 
 <body>
 
-  <nav>
-    <ul>
-      <li><a href=""> Mission </a></li>
-      <li><a href=""> Contact </a></li>
-      <li><a href=""> Home </a></li>
-      <li class="fLeft"><a href="#">Jordan Morris</a></li>
+<!-- Beginning of Navigation -->
+  <nav class="navComponent">
+    <ul class="navComponent">
+      <!-- ul is floated right so links are in reverse order -->
+      <li><a href="#form-container" class="navComponent"> Contact </a></li>
+      <li><a href="#mission" class="navComponent"> Mission </a></li>
+      <li><a href="#headMain" class="navComponent"> Home </a></li>
+      <li class="fLeft"><a href="#" class="navComponent">Jordan Morris</a></li>
     </ul>
   </nav>
+<!-- End of navigation -->
 
+<!-- Beginning of header and title  -->
   <div id="headMain">
-
     <div id="headContent">
       <h1> Jordan Morris </h1>
       <h2> Creating ... </h2>
-      <h2> Through Code </h2>
+
       <button type="button"> Contact Me </button>
     </div>
-
   </div>
+<!-- End of header and title  -->
 
+<!-- Beginning of main body -->
   <div id="mainContainer">
+
+    <!-- Beginning of mission section -->
     <div id="mission">
       <h1> My Mission </h1>
       <p>I first began my development journey in 2017, and immediately felt a passion for my work that has spurred me on since. I have trained as a full-stack web developer and the skills I’ve learned have helped me to understand what is most important to
@@ -125,5 +140,5 @@
   </div>
 
 </body>
-
+<script src="script.js"></script>
 </html>
