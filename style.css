@@ -11,7 +11,7 @@ nav {
   position: fixed; /* Set the navbar to fixed position */
 top: 0; /* Position the navbar at the top of the page */
 /* max-height: 5vh; */
-width: 80%;
+width: 100%;
 padding:0 10%;
 /* background-color: #f3f3f3; */
 
@@ -105,7 +105,23 @@ li a:hover:not(.active) {
   min-height: 80vh;
 }
 
+#contactButton {
+  margin-top: 10px;
+  font-size: 36px;
+  color: #e7e7e7;
+  font-weight: 700;
+  border-radius: 15px;
+  border: 2px solid red;
+  opacity: 1;
+  background-color: transparent;
+  font-style: "Roboto", serif;
+}
+
+#contactButton:hover {
+  opacity: .5;
+}
 #mainContainer {
+  font-family: Roboto, serif;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -119,24 +135,38 @@ li a:hover:not(.active) {
 #mission {
   text-align: center;
 }
+
+#mission h1 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#mission p {
+  font-size: 1.5vw;
+  text-align: justify;
+  padding: 0px 10px;
+}
 #missionObjectives {
   text-align: center;
   height:auto;
   width: 100%;
+
 }
 
 .objective {
+  font-size: 1.5vw;
   justify-content: space-around;
   margin-top: 20px;
   width: 33%;
   float:left;
   /* min-height:(200px); */
   background-color:white;
+  margin-bottom: 10vh;
 }
 
 #leftRightFlow {
-  /* display:block; */
-  padding-top: 20px;
+  display:block;
+  padding: 0;
+  margin-top: 40vh;
   text-align: center;
   background-color: white;
   /* min-height: 600px; */
@@ -154,26 +184,51 @@ li a:hover:not(.active) {
     clear: both;
 }
 #form-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
+
 }
 .testCard:nth-child(odd) {
   float: left;
-  width: 70%;
+  max-width: 70%;
+  min-width: auto;
   min-height: 100px;
-  background: white;
-  color: black;
+  border-radius: 10px 100px / 120px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: black;
+  color: white;
+  opacity: .9;
+  margin-top: 2vh;
 }
 
 .testCard:nth-child(even) {
   float: right;
   width: 70%;
   min-height: 100px;
-  background: white;
-  color: black;
+  border-radius: 10px 100px / 120px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: black;
+  color: white;
+  opacity: .9;
+  margin-top: 2vh;
 }
 
+.testCard h4 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 10px;
+}
 
+.testCard h5 {
+  background-colour: gray;
+  opacity: 0.8;
+  font-size: 30px;
+  /* border: 1px solid gray;
+  border-radius: 3%; */
+  padding: 5px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -186,25 +241,45 @@ li a:hover:not(.active) {
 }
 
 
+/* TESTING GROUND  */
+/* layout */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+#sidebar {
+    float: left;
+    max-width: 35%;
+    font-size: 1.8vw;
+    margin-left: 5vw;
+    overflow-x:visible;
+}
+
+#content-wrap {
+    float: right;
+    max-width: 100%;
+    margin-right: 5vw;
+}
 
 /* FORM STYLINGS BELOW */
 #feedback-page{
 	text-align:center;
+
 }
 
 #form-main{
-	width:100%;
 	/* padding-top:400px; */
-  float: right;
+  /* float: left; */
 }
 
 #form-div {
 	background-color:rgba(72,72,72,0.4);
-	padding-left:35px;
-	padding-right:35px;
+	padding-left:10px;
+	padding-right:10px;
 	padding-top:35px;
 	padding-bottom:50px;
-	width: 450px;
+	/* max-width: 450px; */
 	/* left: 50%;
 	position: absolute; */
   margin-top:30px;
@@ -346,4 +421,131 @@ input:focus, textarea:focus {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
+}
+
+/* RIBBON CSS */
+* {
+  padding: 0;
+  /* Standard Reset, and we're adding box-sizing:border-box because it's awesome. */
+
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  -o-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+}
+
+.content-box {
+  width: 100%;
+  height: 400px;
+  max-width:80%;
+  margin: 94px auto 0 auto;
+  position: relative;
+  /* So we can position the banner within the box */
+
+  background: gray;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+#ribbon-container {
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  overflow: visible;
+  /* so we can see the pseudo-elements we're going to add to the anchor */
+
+  font-size: 18px;
+  /* font-size and line-height must be equal so we can account for the height of the banner */
+
+  line-height: 18px;
+}
+
+#ribbon-container:before {
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  border-top: 29px solid rgba(0, 0, 0, .3);
+  /* These 4 border properties create the first part of our drop-shadow */
+
+  border-bottom: 29px solid rgba(0, 0, 0, .3);
+  border-right: 29px solid rgba(0, 0, 0, .3);
+  border-left: 29px solid transparent;
+}
+
+#ribbon-container:after {
+  /* This adds the second part of our dropshadow */
+
+  content: "";
+  height: 3px;
+  background: rgba(0, 0, 0, .3);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 58px;
+  right: 3px;
+}
+
+#ribbon-container a {
+  display: block;
+  padding: 20px;
+  position: relative;
+  /* allows us to position our pseudo-elements properly */
+
+  background: #0089d0;
+  overflow: visible;
+  height: 58px;
+  margin-left: 29px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#ribbon-container a:after {
+  /* this creates the "folded" part of our ribbon */
+
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  border-top: 15px solid #004a70;
+  border-right: 15px solid transparent;
+}
+
+#ribbon-container a:before {
+  /* this creates the "forked" part of our ribbon */
+
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -29px;
+  border-top: 29px solid #0089d0;
+  border-bottom: 29px solid #0089d0;
+  border-right: 29px solid transparent;
+  border-left: 29px solid transparent;
+}
+
+#ribbon-container a:hover {
+  background: #009ff1;
+}
+
+#ribbon-container a:hover:before {
+  /* this makes sure that the "forked" part of the ribbon changes color with the anchor on :hover */
+
+  border-top: 29px solid #009ff1;
+  border-bottom: 29px solid #009ff1;
 }

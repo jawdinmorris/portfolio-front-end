@@ -7,10 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- External StyleSheets -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
 
   <!-- My StyleSheet -->
   <link rel="stylesheet" href="style.css">
@@ -21,7 +25,7 @@
 
 <body>
 
-<!-- Beginning of Navigation -->
+  <!-- Beginning of Navigation -->
   <nav class="navComponent">
     <ul class="navComponent">
       <!-- ul is floated right so links are in reverse order -->
@@ -31,20 +35,20 @@
       <li class="fLeft"><a href="#" class="navComponent">Jordan Morris</a></li>
     </ul>
   </nav>
-<!-- End of navigation -->
+  <!-- End of navigation -->
 
-<!-- Beginning of header and title  -->
+  <!-- Beginning of header and title  -->
   <div id="headMain">
     <div id="headContent">
       <h1> Jordan Morris </h1>
       <h2> Creating ... </h2>
 
-      <button type="button"> Contact Me </button>
+      <button type="button" id="contactButton"> Contact Me </button>
     </div>
   </div>
-<!-- End of header and title  -->
+  <!-- End of header and title  -->
 
-<!-- Beginning of main body -->
+  <!-- Beginning of main body -->
   <div id="mainContainer">
 
     <!-- Beginning of mission section -->
@@ -52,6 +56,7 @@
       <h1> My Mission </h1>
       <p>I first began my development journey in 2017, and immediately felt a passion for my work that has spurred me on since. I have trained as a full-stack web developer and the skills I’ve learned have helped me to understand what is most important to
         me: enabling accessibility to information, education and other vital services to those who traditionally struggle to use these services. I am actively working to create a more accessible world through three main paths. </p>
+      <!-- Beggining of mission objectives -->
       <div id="missionObjectives">
         <div class="objective">
           <i class="medium material-icons">business</i>
@@ -72,64 +77,84 @@
             programs, I hope to be able to solve community issues by working with locals and enabling them with the tools they need to ensure great physical access to their local area. </p>
         </div>
       </div>
+      <!-- end of mission objectives -->
     </div>
+    <!-- end of mission section -->
+    <!-- Beginning of projects section -->
     <div id="leftRightFlow">
       <h1> My Projects </h1>
+      <!-- Beginning of indvidual cards -->
       <div class="testCard">
         <h4> Ratatat </h4>
-        <img src="http://lorempixel.com/400/200" alt="Screenshot of Ratat game">
+        <img src="resources/ratatat.gif" alt="Gif showing Ratatat Game" style="max-width:90%;">
         <p>A soundboard game created using paper.js and howler.js</p>
         <h5><i class="icon-css3"></i><i class="icon-html5"></i><i class="icon-javascript"></i></h5>
       </div>
+
       <div class="testCard">
         <h4> The Colour Picker Game </h4>
-        <img src="http://lorempixel.com/400/200" alt="Screenshot of Colour Picker Game">
+        <img class="portfolioImg" src="resources/colorPicker.gif" alt="Gif showing Colour Picker Game" style="max-width:90%;">
         <p>A game created to learn Colour Codes and basic JS</p>
         <h5><i class="icon-css3"></i><i class="icon-html5"></i><i class="icon-javascript"></i></h5>
       </div>
       <div class="testCard">
         <h4> West World Splash </h4>
-        <img src="http://lorempixel.com/400/200" alt="Screenshot of West World Screen">
+        <img src="resources/westWorld.gif" alt="Gif showing WestWorld splash screen" style="max-width:90%;">
         <p> A mock screen created for West World Season 2 </p>
         <h5><i class="icon-css3"></i><i class="icon-html5"></i></h5>
       </div>
       <div class="testCard">
         <h4>Ruby Application </h4>
-        <img src="http://lorempixel.com/400/200" alt="Screenshot of Ruby app">
+        <img src="resources/rubyTester.gif" alt="Gif showing Ruby Quiz Application" style="max-width:90%;">
         <p> A Ruby Application developed for my first assessment at Coder Academy </p>
         <h5> <i class="icon-ruby"></i> </h5>
       </div>
+      <!-- End of indvidual cards -->
     </div>
+    <!-- end of projects section -->
+    <!-- Breaker added to stop Flex behaviour -->
     <div class="breaker"></div>
-    <div id="form-container">
-      <div id="form-description">
-        <h1> Contact Me </h1>
-        <p> Email: </p>
-        <p> Phone:</p>
-        <p> Twitter: </p>
-        <p> LinkedIn: </p>
-        <p> Github: </p>
-      </div>
-      <div id="form-main">
-        <div id="form-div">
-          <form class="form" id="form1">
-            <p class="name">
-              <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-            </p>
-            <p class="email">
-              <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-            </p>
-            <p class="text">
-              <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
-            </p>
-            <div class="submit">
-              <input type="submit" value="SEND" id="button-blue" />
-              <div class="ease"></div>
-            </div>
-          </form>
+
+    <!-- Beginning of contact section -->
+    <div id="main-wrap">
+      <div id="form-container">
+        <h1 style="text-align: center;"> Contact Me </h1>
+        <!-- Beginning of contact details -->
+        <div id="sidebar">
+          <br><br>
+          <p> If you wish to contact me please use the form to the right and i'll get back to you use as soon as possible! </p> <br>
+          <p> Phone: <br> 0431 118 798</p> <br>
+          <p> Follow me:
+            <br> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-github"></i>
+          </p>
         </div>
+        <!-- end of contact details -->
+        <!-- Beginning of contact form -->
+        <div id="content-wrap">
+          <div id="form-div">
+            <form class="form" id="form1">
+              <p class="name">
+                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+              </p>
+              <p class="email">
+                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+              </p>
+              <p class="text">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+              </p>
+              <div class="submit">
+                <input type="submit" value="SEND" id="button-blue" />
+                <div class="ease"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end of contact form -->
       </div>
     </div>
+    <!-- End of contact section -->
+
+    <!-- Beginning of footer  -->
     <div id="footer">
       <div class="grid-container">
         <div class="grid-item">Logo</div>
@@ -137,8 +162,12 @@
         <div class="grid-item">Sign Off</div>
       </div>
     </div>
+    <!-- End of footer -->
   </div>
+  <!-- End of main body  -->
 
 </body>
+<!-- Script for navbar -->
 <script src="script.js"></script>
+
 </html>
