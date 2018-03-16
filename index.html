@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- External StyleSheets -->
+  <!-- External StyleSheets SEE IF IM USING ALL ICONS?-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -16,8 +16,9 @@
 
 
 
-  <!-- My StyleSheet -->
+  <!-- My StyleSheet & Script-->
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
   <!-- Title that appears in tab -->
   <title>Jordan Morris - Inclusive Development</title>
@@ -29,10 +30,10 @@
   <nav class="navComponent">
     <ul class="navComponent">
       <!-- ul is floated right so links are in reverse order -->
-      <li><a href="#contact-section" class="navComponent"> Contact </a></li>
-      <li><a href="#mission" class="navComponent"> Mission </a></li>
-      <li><a href="#headMain" class="navComponent"> Home </a></li>
-      <li class="fLeft"><a href="#" class="navComponent">Jordan Morris</a></li>
+      <li><a name="contact-header" href="#contact-section" class="navComponent"> Contact </a></li>
+      <li><a name="mission-header" href="#mission" class="navComponent"> Mission </a></li>
+      <li><a name="home-header" href="#headMain" class="navComponent"> Home </a></li>
+      <li class="fLeft"><a name ="home-header" href="#" class="navComponent">Jordan Morris</a></li>
     </ul>
   </nav>
   <!-- End of navigation -->
@@ -46,7 +47,7 @@
      data-period="2000"
      data-rotate='[ "accessibility.", "new worlds.", "freedom.", "inclusiveness.", "community.", "opportunities.", "solutions."]'></span> </h2>
 
-    <a href="#contact-section" > <button type="button" id="contactButton"> Contact Me </button> </a>
+      <a href="#contact-section"> <button type="button" id="contactButton"> Contact Me </button> </a>
     </div>
   </div>
   <!-- End of header and title  -->
@@ -63,22 +64,23 @@
       <!-- Beggining of mission objectives -->
       <div id="missionObjectives">
         <div class="objective">
-          <i class="medium material-icons">business</i>
+          <i class="medium material-icons" aria-hidden="true">business</i>
           <h3> Web Development </h3>
-          <p> I am currently able to confidently create front-end web development projects. I am currently expanding upon these skills at Coder Academy Brisbane. After already establishing solid skills in Ruby, HTML and CSS in the coming weeks I will expand on my
-            knowledge on frameworks such as BootStrap and React. I am currently expanding my back-end tech stacks to include MongoDB, NodeJS, Express and Ruby on Rails.
-          </div>
-        <div class="objective">
-          <i class="medium material-icons">face</i>
-          <h3> Accessibility & Community </h3>
-          <p> Accessibility is my driving point for being in development and the purpose within my work. Whilst developing my skills i'm focusing on the impact of accessibility. This means within all my prohects I aim to comply with WACG (Web Accessibility Content Guidelines)
-            in regards to readability, colour and motor use. I aim to foster a culture that creates change on an individual level. By discussing my personal story I hope to facilitate discussion on accessibility, inclusiveness and community. </p>
+          <p> I am currently able to confidently create front-end web development projects. I am currently expanding upon these skills at Coder Academy Brisbane. After already establishing solid skills in Ruby, HTML and CSS in the coming weeks I will expand
+            on my knowledge on frameworks such as BootStrap and React. I am currently expanding my back-end tech stacks to include MongoDB, NodeJS, Express and Ruby on Rails.
         </div>
         <div class="objective">
+          <i class="medium material-icons" aria-hidden="true">face</i>
+          <h3> Accessibility & Community </h3>
+          <p> Accessibility is my driving point for being in development and the purpose within my work. Whilst developing my skills i'm focusing on the impact of accessibility. This means within all my prohects I aim to comply with WACG (Web Accessibility
+            Content Guidelines) in regards to readability, colour and motor use. I aim to foster a culture that creates change on an individual level. By discussing my personal story I hope to facilitate discussion on accessibility, inclusiveness and
+            community. </p>
+        </div>
+        <div class="objective" aria-hidden="true">
           <i class="medium material-icons">group</i>
           <h3> Machine Learning </h3>
-          <p> I currently have a large interest in expanding my knowledge in the field of Machine Learning, data science and data visualisation. Whilst none of my traditional projects have afforded me the opportunity to use ML, I appreciate how the impacts of Machine Learning are far reaching. I aim to learn Python and MatLab so I can
-          use ML to provide accessibility products. I'm actively searching for a mentor for this topic, if you can assist please contact me below.  </p>
+          <p> I currently have a large interest in expanding my knowledge in the field of Machine Learning, data science and data visualisation. Whilst none of my traditional projects have afforded me the opportunity to use ML, I appreciate how the impacts
+            of Machine Learning are far reaching. I aim to learn Python and MatLab so I can use ML to provide accessibility products. I'm actively searching for a mentor for this topic, if you can assist please contact me below. </p>
         </div>
       </div>
       <!-- end of mission objectives -->
@@ -86,7 +88,7 @@
     <!-- end of mission section -->
     <!-- Beginning of projects section -->
     <div id="leftRightFlow">
-  <div class="breaker"></div>
+      <div class="breaker"></div>
       <h1> My Projects </h1>
 
       <!-- Beginning of indvidual cards -->
@@ -129,29 +131,41 @@
       <p> Find my work: </p>
       <div class="contact-container">
         <div class="grid-item">
-       <a href="https://github.com/jawdinmorris"> <p> <i class="fab fa-github cIcon"></i> <br> Github </p> </a>
+          <a href="https://github.com/jawdinmorris">
+            <p> <i class="fab fa-github cIcon" aria-hidden="true"></i> <br> Github </p>
+          </a>
         </div>
         <div class="grid-item">
-          <a href="https://codepen.io/jawdinmorris/"> <p> <i class="fab fa-codepen cIcon"> </i> <br> Codepen </p> </a>
+          <a href="https://codepen.io/jawdinmorris/">
+            <p> <i class="fab fa-codepen cIcon" aria-hidden="true"> </i> <br> Codepen </p>
+          </a>
         </div>
       </div>
 
       <p> Follow me: </p>
       <div class="contact-container">
         <div class="grid-item">
-          <a href="https://www.linkedin.com/in/jordanandrewmorris/"> <p> <i class="fab fa-linkedin cIcon"></i> <br> LinkedIn </p> </a>
+          <a href="https://www.linkedin.com/in/jordanandrewmorris/">
+            <p> <i class="fab fa-linkedin cIcon" aria-hidden="true"></i> <br> LinkedIn </p>
+          </a>
         </div>
         <div class="grid-item">
-          <a href="https://twitter.com/JawdinMorris"> <p> <i class="fab fa-twitter cIcon"></i> <br> Twitter </p> </a>
+          <a href="https://twitter.com/JawdinMorris">
+            <p> <i class="fab fa-twitter cIcon" aria-hidden="true"></i> <br> Twitter </p>
+          </a>
         </div>
       </div>
       <p> Contact me: </p>
       <div class="contact-container">
         <div class="grid-item">
-          <a href="mailto:jordanandrewmorris@gmail.com"> <p> <i class="fas fa-envelope cIcon"></i> <br> Click to Email </p> </a>
+          <a href="mailto:jordanandrewmorris@gmail.com">
+            <p> <i class="fas fa-envelope cIcon" aria-hidden="true"></i> <br> Click to Email </p>
+          </a>
         </div>
         <div class="grid-item">
-          <a href="tel:0431118798"> <p> <i class="fas fa-phone cIcon"></i> <br> Click to Call </p> </a>
+          <a href="tel:0431118798">
+            <p> <i class="fas fa-phone cIcon" aria-hidden="true"></i> <br> Click to Call </p>
+          </a>
         </div>
       </div>
       <!-- end of contact details -->
@@ -171,7 +185,6 @@
   <!-- End of main body  -->
 
 </body>
-<!-- Script for navbar -->
-<script src="script.js"></script>
+
 
 </html>
