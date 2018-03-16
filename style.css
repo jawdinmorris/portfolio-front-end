@@ -155,7 +155,7 @@ li a:hover:not(.active) {
 }
 #mission p {
   font-size: 15px;
-  text-align: justify;
+  text-align: center;
   padding: 0px 10vw;
 }
 #missionObjectives {
