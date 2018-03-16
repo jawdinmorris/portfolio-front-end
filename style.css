@@ -94,6 +94,7 @@ li a:hover:not(.active) {
   padding: 0;
 }
 #headContent h2{
+  font-size: 3vw;
   margin: 0;
   padding: 10px 0;
 }
@@ -111,7 +112,7 @@ li a:hover:not(.active) {
 }
 
 #contactButton {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 36px;
   color: #e7e7e7;
   font-weight: 700;
@@ -141,6 +142,10 @@ li a:hover:not(.active) {
   color: #474747;
   box-shadow: 0px 5px 10px gray;
 }
+
+#mainContainer h1 {
+  text-align: center;
+}
 #mission {
   text-align: center;
 }
@@ -160,9 +165,11 @@ li a:hover:not(.active) {
   padding: 0px 10vw;
 }
 #missionObjectives {
+  /* float: left; */
   text-align: center;
   height: auto;
-  width: 100%;
+  max-width: 100%;
+  margin:auto;
 
 }
 #missionObjectives p {
@@ -172,19 +179,22 @@ li a:hover:not(.active) {
   font-size: 1em;
   /* justify-content: space-around; */
   margin-top: 20px;
-  width: 33%;
+  min-width: 30%;
+  max-width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
   float:left;
   /* min-height:(200px); */
   background-color: #ffffff;
   color: #474747;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   height: auto;
 }
 
 #leftRightFlow {
   width: 100%;
   display:block;
-  margin-top: 40vh;
+  margin-top: 10vh;
   text-align: center;
   background-color: #ffffff;
   color: #3C4858;
@@ -210,10 +220,11 @@ li a:hover:not(.active) {
   max-width: 70%;
   min-width: auto;
   min-height: 100px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   color: #474747;
   opacity: .9;
   margin-top: 2vh;
+  border: none;
 }
 
 .testCard:nth-child(odd) {
@@ -221,10 +232,11 @@ li a:hover:not(.active) {
   max-width: 70%;
   min-width: auto;
   min-height: 100px;
-  background-color: transparent;
+  /* background-color: transparent; */
   color: #474747;
   opacity: .9;
   margin-top: 2vh;
+  border: none;
 }
 
 .testCard h4 {
@@ -245,7 +257,7 @@ color: #3C4858;
 }
 .cardimg {
   max-width:90%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 33%;
   border-radius: 120px 10px / 100px;
 }

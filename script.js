@@ -69,3 +69,53 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid white }";
   document.body.appendChild(css);
 };
+
+
+
+
+
+
+
+
+
+    $(function() {
+        $("#rPic").hover(
+            function() {
+                $(this).attr("src", "resources/ratatat.gif");
+            },
+            function() {
+                $(this).attr("src", "resources/static.gif");
+            }
+        );
+    });
+
+    $(function() {
+        $("#cPic").hover(
+            function() {
+                $(this).attr("src", "resources/colorPicker.gif");
+            },
+            function() {
+                $(this).attr("src", "resources/static.gif");
+            }
+        );
+    });
+    $(function() {
+        $("#wPic").hover(
+            function() {
+                $(this).attr("src", "resources/westWorld.gif");
+            },
+            function() {
+                $(this).attr("src", "resources/static.gif");
+            }
+        );
+    });
+    $(function() {
+        $("#ruPic").hover(
+            function() {
+                $(this).attr("src", "resources/rubyTester.gif");
+            },
+            function() {
+                $(this).attr("src", "resources/static.gif");
+            }
+        );
+    });
