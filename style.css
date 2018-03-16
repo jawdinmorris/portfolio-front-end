@@ -49,7 +49,7 @@ li {
 li a {
     display: block;
     text-align: center;
-    padding: 14px 10px;
+    padding: 14px 5px;
     text-decoration: none;
     color: #fff;
 }
@@ -147,7 +147,7 @@ li a:hover:not(.active) {
   text-align: center;
 }
 #mission {
-  text-align: center;
+  /* text-align: center; */
 }
 
 #mission h1 {
@@ -158,15 +158,16 @@ li a:hover:not(.active) {
 }
 #mission h3 {
   color: #3C4858;
+    padding: 0px 3vw;
 }
 #mission p {
   font-size: 15px;
-  text-align: center;
-  padding: 0px 10vw;
+  /* text-align: center; */
+  padding: 0px 8vw;
 }
 #missionObjectives {
   /* float: left; */
-  text-align: center;
+  /* text-align: center; */
   height: auto;
   max-width: 100%;
   margin:auto;
@@ -187,7 +188,7 @@ li a:hover:not(.active) {
   /* min-height:(200px); */
   background-color: #ffffff;
   color: #474747;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   height: auto;
 }
 
