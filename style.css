@@ -235,6 +235,11 @@ nav img {
   width: 100%;
   color: white;
 }
+#footer img {
+  margin: 0;
+  padding: 0;
+  max-height: 30px;
+}
 .gridItem {
   font-size: 12px;
   text-align: center;
