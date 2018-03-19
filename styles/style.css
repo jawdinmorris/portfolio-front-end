@@ -201,6 +201,12 @@ nav img {
   border-radius: 33%;
   border-radius: 120px 10px / 100px;
 }
+
+@media only screen and (max-width: 600px) {
+  .testcard cardimg {
+    background-image: url("resources/colorPickerStatic.gif");
+  }
+}
 /* PORTFOLIO CARDS END */
 /* CONTACT BEIGN */
 .contactContainer {
