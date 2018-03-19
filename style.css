@@ -211,14 +211,15 @@ li a:hover{
   color: #3C4858;
 }
 .cIcon {
-  margin: 20px;
+  margin: 5px;
   padding: 5px;
-  font-size: 70px;
+  font-size: 65px;
   color: #474747;
 }
 .cIcon:hover {
   padding: 0px;
-  font-size: 80px;
+  margin: 5px;
+  font-size: 75px;
   color: #3C4858;
 }
 /* CONTACT END */
