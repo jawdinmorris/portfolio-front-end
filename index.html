@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Meta Data -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- External StyleSheets SEE IF IM USING ALL ICONS?-->
-
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
   <!-- My StyleSheet & Script-->
   <link rel="stylesheet" href="style.css">
-
-
   <!-- Title that appears in tab -->
   <title>Jordan Morris</title>
 </head>
-
 <body>
-
   <!-- Beginning of Navigation -->
   <nav class="navComponent">
     <ul class="navComponent">
       <!-- ul is floated right so links are in reverse order -->
-      <li><a href="#contact-section" class="navComponent"> Contact </a></li>
+      <!-- <li class="fLeft"><a href="#" class="navComponent">Jordan Morris</a></li> -->
+      <li><a href="#contactSection" class="navComponent"> Contact </a></li>
       <li><a href="#mission" class="navComponent"> Mission </a></li>
       <li><a href="#headMain" class="navComponent"> Home </a></li>
-      <li class="fLeft"><a href="#" class="navComponent">Jordan Morris</a></li>
+
     </ul>
   </nav>
   <!-- End of navigation -->
-
   <!-- Beginning of header and title  -->
   <div id="headMain">
     <div id="headContent">
@@ -42,15 +35,13 @@
      class="txt-rotate"
      data-period="2000"
      data-rotate='[ "accessibility.", "new worlds.", "freedom.", "inclusiveness.", "community.", "opportunities.", "solutions."]'></span> </h2>
-
-      <a href="#contact-section"> <button type="button" id="contactButton"> Contact Me </button> </a>
+      <a href="#contactSection"> <button type="button" id="contactButton"> Contact Me </button> </a>
     </div>
   </div>
   <!-- End of header and title  -->
-
   <!-- Beginning of main body -->
   <div id="mainContainer">
-<div class="breaker"> </div>
+    <div class="breaker"> </div>
     <!-- Beginning of mission section -->
     <div id="mission">
       <h2> My Mission </h2>
@@ -59,19 +50,16 @@
       <!-- Beggining of mission objectives -->
       <div id="missionObjectives">
         <div class="objective">
-
           <h3> <i class="fas fa-globe" aria-hidden="true"></i> Web Development </h3>
           <p> I am currently confident creating front-end web development projects. I am currently expanding upon these skills at Coder Academy Brisbane. I have already established solid skills in Ruby, HTML and CSS. In the coming weeks I will expand on my
             knowledge on frameworks such as BootStrap and React. On the back-end i'm currently learning the MERN stack. </p>
         </div>
         <div class="objective">
-
           <h3>  <i class="fab fa-accessible-icon" aria-hidden="true"></i> Accessibility & Community </h3>
           <p> Accessibility is my driving point for being a developer and the purpose within my work. No human should have difficulty accessing our physical or digital world. Communities drive change and traditional disabilities should not exclude you from
             creating. In all my work I aim to create a discussion on accessibility and inclusiveness. </p>
         </div>
         <div class="objective">
-
           <h3> <i class="fas fa-graduation-cap" aria-hidden="true"></i> Machine Learning </h3>
           <p> I currently have an interest in expanding my knowledge of machine learning and big data. Personally, data visualisation and journalism have massively influenced my life. The ethics of algorithms rely on the teams developing them. I wish to be
             part of an inclusive future powered by ML. I'm actively searching for a mentor for this topic, if you can assist please contact me below. </p>
@@ -83,14 +71,13 @@
     <!-- Beginning of projects section -->
     <div class="breaker"> </div>
     <h2> Find My Work </h2>
-    <div class="contact-container">
-
-      <div class="grid-item">
+    <div class="contactContainer">
+      <div class="gridItem">
         <a aria-label="Go to my github" href="https://github.com/jawdinmorris">
           <p> <i class="fab fa-github cIcon" aria-hidden="true"></i> <br> Github </p>
         </a>
       </div>
-      <div class="grid-item">
+      <div class="gridItem">
         <a aria-label="Go to my codepen" href="https://codepen.io/jawdinmorris/">
           <p> <i class="fab fa-codepen cIcon" aria-hidden="true"> </i> <br> Codepen </p>
         </a>
@@ -99,7 +86,6 @@
     <div id="leftRightFlow">
       <!-- <div class="breaker"></div> -->
       <h2> My Projects </h2>
-
       <!-- Beginning of indvidual cards -->
       <div class="testCard">
         <a aria-label="Go to external Ratatat page" href="https://jawdinmorris.github.io/Ratatat/" target="_blank"><h3> Ratatat </h3>
@@ -107,9 +93,8 @@
         <p>A soundboard game created using paper.js and howler.js</p>
         <p>Tech: <i class="fab fa-css3-alt"  aria-label="CSS3"></i> <i class="fab fa-html5" aria-label="HTML5"></i> <i class="fab fa-js-square"  aria-label="Javascript"></i></p> </a>
       </div>
-
       <div class="testCard">
-        <a aria-label="Go to external colour game"href="https://jawdinmorris.github.io/TheColourPickerGame/" target="_blank"><h3> The Colour Picker Game </h3>
+        <a aria-label="Go to external colour game" href="https://jawdinmorris.github.io/TheColourPickerGame/" target="_blank"><h3> The Colour Picker Game </h3>
         <img src="resources/static.gif" alt="Gif showing Colour Picker Game" class="cardimg" id="cPic">
         <p>A game created to learn Colour Codes and basic JS</p>
         <p>Tech: <i class="fab fa-css3-alt" aria-label="CSS3"></i> <i class="fab fa-html5" aria-label="HTML5"></i> <i class="fab fa-js-square" aria-label="Javascript"></i></p> </a>
@@ -131,35 +116,31 @@
     <!-- end of projects section -->
     <!-- Breaker added to stop Flex behaviour -->
     <div class="breaker"></div>
-
     <!-- Beginning of contact section -->
-    <div id="contact-section">
+    <div id="contactSection">
       <h2> Contact Me </h2>
       <!-- Beginning of contact details -->
-
-
-
       <h3> Follow me: </h3>
-      <div class="contact-container">
-        <div class="grid-item">
+      <div class="contactContainer">
+        <div class="gridItem">
           <a aria-label="Go to my LinkedIn page" href="https://www.linkedin.com/in/jordanandrewmorris/">
             <p> <i class="fab fa-linkedin cIcon" aria-hidden="true"></i> <br> LinkedIn </p>
           </a>
         </div>
-        <div class="grid-item">
+        <div class="gridItem">
           <a aria-label="Go to my Twitter page" href="https://twitter.com/JawdinMorris">
             <p> <i class="fab fa-twitter cIcon" aria-hidden="true"></i> <br> Twitter </p>
           </a>
         </div>
       </div>
       <h3> Contact me: </h3>
-      <div class="contact-container">
-        <div class="grid-item">
+      <div class="contactContainer">
+        <div class="gridItem">
           <a aria-label="External link to send email" href="mailto:jordanandrewmorris@gmail.com" alt="Mailing link">
             <p> <i class="fas fa-envelope cIcon" aria-hidden="true"></i> <br> Write me an email</p>
           </a>
         </div>
-        <div class="grid-item">
+        <div class="gridItem">
           <a aria-label="External link to call me" href="tel:0431118798" alt="Phone link">
             <p> <i class="fas fa-phone cIcon" aria-hidden="true"></i> <br> Give me a call</p>
           </a>
@@ -168,21 +149,16 @@
       <!-- end of contact details -->
     </div>
     <!-- End of contact section -->
-
     <!-- Beginning of footer  -->
     <div id="footer">
-      <div class="grid-container">
-        <div class="grid-item">Logo</div>
-        <div class="grid-item">Ownership</div>
-        <div class="grid-item">Sign Off</div>
+      <div class="gridContainer">
+        <div class="gridItem">Logo</div>
+        <div class="gridItem">Ownership</div>
+        <div class="gridItem">Sign Off</div>
       </div>
     </div>
     <!-- End of footer -->
   </div>
   <!-- End of main body  -->
-
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="script.js"></script>
-
 </html>

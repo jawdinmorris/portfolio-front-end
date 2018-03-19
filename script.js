@@ -1,8 +1,8 @@
+// SCROLLING NAV EFFECT
 $(document).ready(function() {
-        // Transition effect for navbar
         $(window).scroll(function() {
           // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 300) {
+          if($(this).scrollTop() > 150) {
               $('.navComponent').addClass('solid');
               $('nav').addClass('navShadow');
           } else {
@@ -12,7 +12,7 @@ $(document).ready(function() {
         });
 });
 
-
+// ANIMATED TEXT
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -70,13 +70,7 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-
-
-
-
-
-
-
+// CHANGE SOURCE OF HOVER IMAGES
 
     $(function() {
         $("#rPic").hover(
