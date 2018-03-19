@@ -128,4 +128,3 @@ $(document).ready(function(){
 	    }, 900, 'swing');
 	});
 });
-//REMOVE URL ON SCROLLING$('html, body').stop().animate({
