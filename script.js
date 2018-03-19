@@ -1,3 +1,8 @@
+
+
+
+
+
 // SCROLLING NAV EFFECT
 $(document).ready(function() {
         $(window).scroll(function() {
@@ -70,49 +75,6 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-// CHANGE SOURCE OF HOVER IMAGES
-
-    $(function() {
-        $("#rPic").hover(
-            function() {
-                $(this).attr("src", "resources/ratatat.gif");
-            },
-            function() {
-                $(this).attr("src", "resources/static.gif");
-            }
-        );
-    });
-
-    $(function() {
-        $("#cPic").hover(
-            function() {
-                $(this).attr("src", "resources/colorPicker.gif");
-            },
-            function() {
-                $(this).attr("src", "resources/static.gif");
-            }
-        );
-    });
-    $(function() {
-        $("#wPic").hover(
-            function() {
-                $(this).attr("src", "resources/westWorld.gif");
-            },
-            function() {
-                $(this).attr("src", "resources/static.gif");
-            }
-        );
-    });
-    $(function() {
-        $("#ruPic").hover(
-            function() {
-                $(this).attr("src", "resources/rubyTester.gif");
-            },
-            function() {
-                $(this).attr("src", "resources/static.gif");
-            }
-        );
-    });
 
 
 // SMOOTH SCROLLING
