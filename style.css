@@ -44,6 +44,11 @@ li a {
 li a:hover{
   opacity: 0.5;
 }
+nav img {
+  margin: 0;
+  padding: 0;
+  max-height: 30px;
+}
 .fLeft {
   float: left;
 }
@@ -211,6 +216,7 @@ li a:hover{
   color: #3C4858;
 }
 .cIcon {
+  max-width: 50%;
   padding: 5px;
   font-size: 65px;
   color: #474747;
