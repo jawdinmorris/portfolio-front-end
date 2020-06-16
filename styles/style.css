@@ -201,6 +201,9 @@ nav img {
   border-radius: 33%;
   border-radius: 120px 10px / 100px;
 }
+#pPic {
+  max-height: 330px;
+}
 
 @media only screen and (max-width: 600px) {
   .testcard cardimg {
