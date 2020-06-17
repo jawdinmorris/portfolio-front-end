@@ -203,11 +203,21 @@ nav img {
 }
 #pPic {
   max-height: 330px;
+  min-width: 600px;
 }
 
 @media only screen and (max-width: 600px) {
   .testcard cardimg {
     background-image: url("../images/colorPickerStatic.gif");
+  }
+}
+@media only screen and (max-width: 900px) {
+  .testcard cardimg {
+    background-image: url("../images/colorPickerStatic.gif");
+  }
+  #pPic {
+    max-height: 300px;
+    min-width: 100px;
   }
 }
 /* PORTFOLIO CARDS END */
