@@ -4,7 +4,7 @@
   <!-- Meta Data -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="HTML,CSS,Javascript,JS,Ruby,Developer,Brisbane,Bootstrap,Web development, inclusive developer">
+  <meta name="keywords" content="HTML,CSS,Javascript,JS,Ruby,Developer,Brisbane,Bootstrap,Web development, inclusive developer, accessibility specialist, accessibility consultant">
   <meta name="description" content="Inclusive Web Developer based in Brisbane, Australia.">
   <!-- External StyleSheets & Dependencies-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -15,17 +15,17 @@
 
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <!-- Title that appears in tab -->
-  <title>Jordan Morris - Accessibility Advocate</title>
+  <title>Jordan Morris - Accessibility Specialist</title>
 </head>
 <body>
   <!-- Beginning of Navigation -->
   <nav class="navComponent">
     <ul class="navComponent">
       <!-- ul is floated right so links are in reverse order -->
-      <li class="fLeft"><a href="#" class="navComponent"><img src="images/logo.png"></a></li>
-      <li><a href="#contactSection" class="navComponent"> Contact </a></li>
+      <li><a href="#contactSection" class="navComponent navComponentRight">  Contact </a></li>
+      <li><a href="#portfolio" class="navComponent"> Projects</a> </li>
       <li><a href="#mission" class="navComponent"> Mission </a></li>
-      <li><a href="#headMain" class="navComponent"> Home </a></li>
+      <li><a href="#headMain" class="navComponent navComponentLeft"> Home </a></li>
 
     </ul>
   </nav>
@@ -34,7 +34,7 @@
   <div id="headMain">
     <div id="headContent">
       <h1> Jordan Morris </h1>
-      <h2>Web Developer | Accessibility Advocate</h2>
+      <h2>Web Developer | Accessibility Specialist</h2>
       <h3> Creating <span
      class="txt-rotate"
      data-period="2000"
@@ -49,32 +49,38 @@
     <!-- Beginning of mission section -->
     <div id="mission">
       <h2> My Mission </h2>
-      <p>I first began my development journey in 2017. Immediately I felt a passion for the empowerment education provided. I am currently seeking new opportunities that will allow me to continue improving my full-stack web developer skillset. Software development
-        provided a new gateway; accessibility to myself and others. Access to community, information, education and other vital services. I am working to create a more accessible world through web-based software development.</p>
+      <p>Digital empowerment can provide access to community, information, education and other vital services. I am working to create a more accessible world through web-based software development.</p>
       <!-- Beginning of mission objectives -->
       <div id="missionObjectives">
+        <ul>
+          <li>
         <div class="objective">
-          <h3> <i class="fas fa-globe" aria-hidden="true"></i> Technical Skills </h3>
-          <p> I am currently confident creating full-stack web development projects. Currently my learned languages include C#, .Net, HTML5, CSS3, JavaScript, React, TypeScript, Ruby and Rails. I have experience in startups, education and consulting using agile methodology. I pride myself on consistently learning and experimenting which has led to personal experience in Unity, game development, python and cyber-security.   </p>
+          <h3> <i class="fas fa-globe" aria-hidden="true"></i> Web Development Skills </h3>
+          <p> Currently my learned languages include C#, .Net, HTML5, CSS3, JavaScript, React, TypeScript, Ruby and Rails. I have experience in startups, education and consulting using agile methodology. I pride myself on consistently learning and experimenting which has led to personal experience in Unity, game development, python and cyber-security.   </p>
         </div>
+      </li>
+      <li>
         <div class="objective">
-          <h3>  <i class="fab fa-accessible-icon" aria-hidden="true"></i> Accessibility & Community </h3>
-          <p> Accessibility is my driving point for being a developer and the purpose within my work. No human should have difficulty accessing our physical or digital world. Communities drive change and traditional disabilities should not exclude you from
-            creating. In all my work I aim to create a discussion on accessibility and inclusiveness. </p>
-          <p>I aim to be an integral part of the local tech community, especially those traditionally underrepresented. I am proud to be a co-organiser of BrisTechNewbies and a regular speaker at local meetups.</p>
+          <h3>  <i class="fab fa-accessible-icon" aria-hidden="true"></i> Accessibility Skills </h3>
+          <p> Accessibility is my driving point for being a developer and the purpose within my work. I have extensive accessibility consulting experience for a variety of ASX500 companies, state and federal government entities and small to large not-for-profit enterprises. Particular points
+            of interest include accessible semantic code, universal design, accessibility guidelines and standards. I aim to deliver an experienced, pragmatic and sensitive approach to achieving accessibility based outcomes within a diverse range of teams. In all my work I aim to create a discussion on accessibility and inclusiveness. </p>
         </div>
+      </li>
+      <li>
         <div class="objective">
-          <h3> <i class="fas fa-graduation-cap" aria-hidden="true"></i> Cyber Security </h3>
-          <p> I currently have an interest in expanding my knowledge of cyber security and big data. Personally, sensitive data and the repercussions of an insecure data-world have massively influenced my life as a disabled person. The ethics of data and architecture rely on the teams developing them. I wish to be
-            part of an inclusive future powered by protected data. I'm actively searching for a mentor for this topic, if you can assist please contact me below. </p>
+          <h3> <i class="fas fa-users" aria-hidden="true"></i> Community </h3>
+          <p>Opportunity in technology is wasted without giving, interacting and expanding the local community, especially those traditionally underrepresented. I am proud to be a co-organiser of BrisTechNewbies and a regular speaker at local meetups.</p>
         </div>
+      </li>
+      </ul>
       </div>
       <!-- end of mission objectives -->
     </div>
     <!-- end of mission section -->
     <!-- Beginning of projects section -->
     <div class="breaker"> </div>
-    <h2> Find My Work </h2>
+    <div id="portfolio">
+    <h2 > Find My Work </h2>
     <div class="contactContainer">
       <div class="gridItem">
         <a aria-label="Go to my github" href="https://github.com/jawdinmorris">
@@ -120,7 +126,7 @@
         <p>Tech:<i class="fab fa-react" aria-label="React"></i> <i class="fab fa-html5" aria-label="HTML5"></i> <i class="fab fa-js-square"  aria-label="Javascript"></i> <i class="fab fa-css3-alt"  aria-label="CSS3"></i></p> </a>
       </div>
       <div class="testCard">
-        <a aria-label="Go to external Paper Blaster page" href="http://" target="_blank"><h3> Paper Space </h3>
+        <a aria-label="Go to external Paper Blaster page" href="https://www.kongregate.com/games/Guinner11/paper-blaster" target="_blank"><h3> Paper Space </h3>
         <img src="images/paperBlaster.gif" alt="Gif showing Paper Blaster Game" class="cardimg" id="pPic">
         <p style="padding-right: 20px;">Javascript driven game based on Atari Asteroids.</p>
         <p>Tech:<i class="fab fa-html5" aria-label="HTML5"></i> <i class="fab fa-js-square" aria-label="Javascript"></i></p> </a>
@@ -152,6 +158,7 @@
       <!-- End of indvidual cards -->
     </div>
     <!-- end of projects section -->
+  </div>
     <!-- Breaker added to stop Flex behaviour -->
     <div class="breaker"></div>
     <!-- Beginning of contact section -->
@@ -179,7 +186,7 @@
           </a>
         </div>
         <div class="gridItem">
-          <a aria-label="External link to call me" href="tel:0432065591" alt="Phone link">
+          <a aria-label="External link to call me" href="tel:0406009731" alt="Phone link">
             <p> <i class="fas fa-phone cIcon" aria-hidden="true"></i> <br> Give me a call</p>
           </a>
         </div>
@@ -191,7 +198,7 @@
     <div id="footer">
       <div class="gridContainer">
         <div class="gridItem"><img src="images/logo.png"></div>
-        <div class="gridItem"> &copy; Copyright Jordan Morris 2020</div>
+        <div class="gridItem"> &copy; Copyright Jordan Morris 2022</div>
         <div class="gridItem">Thanks for stopping by!</div>
       </div>
     </div>

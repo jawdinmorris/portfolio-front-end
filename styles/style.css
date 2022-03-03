@@ -29,7 +29,7 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-li {
+nav li {
   float: right;
   /* min-height: 5vh; */
 max-width: 25vw;
@@ -60,11 +60,27 @@ nav img {
   color: #474747;
   background-color: #ffffff;
   z-index: 1;
+  border-radius: 0%;
 }
-.navComponent {
-    font-size: 100%;
+.navComponent.solid {
+  border-radius: 0%;
+}
+.navComponent a {
+    font-size: 2rem;
+    background-color: #FFF;
+    color: #474747;
+    box-shadow: 0px 1px 1px gray;
+}
+.navComponentRight {
+  border-bottom-right-radius: 20%;
+}
+
+.navComponentLeft {
+  border-bottom-left-radius: 20%;
 
 }
+
+
 /* SOLID NAV END */
 /* NAV END */
 /* HEADER START */
@@ -200,10 +216,6 @@ nav img {
   max-width: 90%;
   border-radius: 33%;
   border-radius: 120px 10px / 100px;
-}
-#pPic {
-  max-height: 330px;
-  min-width: 600px;
 }
 
 @media only screen and (max-width: 600px) {
